@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import { routeLoader$ } from '@builder.io/qwik-city';
+import { routeLoader$, Link } from '@builder.io/qwik-city';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 export const getUsers = routeLoader$(async () => {
@@ -77,9 +77,10 @@ export default component$(() => {
                         </td>
                         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{user.company.name}</td>
                         <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                          <a href="#" class="text-indigo-600 hover:text-indigo-900">
-                            Edit<span class="sr-only">, {user.id}</span>
-                          </a>
+
+                            Edit<span class="sr-only">,
+                            <Link href="/users/2" class="my-link">Test Page</Link></span>
+
                         </td>
                       </tr>
                     )))}

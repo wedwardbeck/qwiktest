@@ -53,7 +53,7 @@ export default component$(() => {
   const user = useUserLoader();
   return (
         <div>
-            {(user.value && user.value)} detail here
+            {(user.value && <p>Hi, felix!</p>)} detail here
         </div>
       )
 
