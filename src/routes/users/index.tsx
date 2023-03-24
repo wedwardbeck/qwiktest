@@ -76,12 +76,8 @@ export default component$(() => {
                               <div class="text-gray-500">{user.email}</div>
                         </td>
                         <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{user.company.name}</td>
-                        <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><Link href="/users/2" class="my-link">Test Detail</Link></td>
 
-                            Edit<span class="sr-only">,
-                            <Link href="/users/2" class="my-link">Test Page</Link></span>
-
-                        </td>
                       </tr>
                     )))}
                   </tbody>
