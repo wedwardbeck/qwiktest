@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+import { Link } from '@builder.io/qwik-city';
 import { QwikLogo } from '../icons/qwik';
 import styles from './header.module.css';
 
@@ -22,9 +23,9 @@ export default component$(() => {
           </a>
         </li>
         <li>
-          <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-            Tutorials
-          </a>
+          <Link href="/users" class="my-link">
+            Test Page
+          </Link>
         </li>
       </ul>
     </header>
